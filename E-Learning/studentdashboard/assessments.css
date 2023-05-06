@@ -1,0 +1,156 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  header {
+    background-color: #0047AB;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #logout-button{
+    padding: 6px;
+    margin:-5px;
+    background-color: #5f9ea0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #logout-button:hover {
+    background-color: #4682b4;
+  }
+
+
+  footer{
+    background-color: #0047AB;
+    color: #FFF;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #F5A623;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .assessment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .assessment-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    width: calc(33.33% - 10px);
+  }
+  
+  .assessment-item:last-child {
+    margin-right: 0;
+  }
+  
+  .assessment-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .assessment-header h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .assessment-header p {
+    font-size: 16px;
+    margin: 10px 0 0;
+  }
+  
+  .assessment-body {
+    padding: 20px;
+  }
+  
+  .assessment-body p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .container a {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #F5A623;
+  }
+  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Learning Website</title>
+	<link rel="stylesheet" type="text/css" href="myprogress.css">
+</head>
+<body>
+  
+	<header>
+		<div class="logo">E-Learning Website</div>
+        
+		<nav>
+			<ul>
+                <li><a href="studentdashboard.html">Home</a></li>
+				<li><a href="#">My Progress</a></li>
+				<li><a href="assessments.html">Assessments</a></li>
+				<li><a href="#">Community</a></li>
+                <li><button id="logout-button" onclick="openLogoutModal()">Logout</button></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+      
+        
+
+           <div class="progress-container">
+            <h2>My Progress</h2>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+            <div class="progress-stats">
+              <div class="stat">
+                <h3>Overall Progress</h3>
+                <p>75%</p>
+              </div>
+              <div class="stat">
+                <h3>Lessons Completed</h3>
+                <p>15/20</p>
+              </div>
+              <div class="stat">
+                <h3>Average Assessments Score</h3>
+                <p>85%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-container">
+            <h2>Courses Completion:</h2>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+            <div class="progress-stats">
+              <div class="stat">
+                <h3>Introduction to HTML</h3>
+                <div class="progress">
+                    <div class="course-progress-bar" style="width: 75%"></div>
+                </div>
+                <p>75%</p>
+              </div>
+              <div class="stat">
+                <h3>Introduction to CSS</h3>
+                <div class="progress">
+                    <div class="course-progress-bar" style="width: 90%"></div>
+                </div>
+                <p>90%</p>
+              </div>
+              <div class="stat">
+                <h3>Average Assessments Score</h3>
+                <div class="progress">
+                    <div class="course-progress-bar" style="width: 100%"></div>
+                  </div>
+                <p>100%</p>
+              </div>
+            </div>
+         </div>
+          
+        </main>
+
+	<footer id="foot">
+		<p>&copy; E-Learning Website 2023</p>
+	</footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

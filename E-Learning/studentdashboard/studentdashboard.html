@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Learning Website</title>
+	<link rel="stylesheet" type="text/css" href="studentdashboard.css">
+</head>
+<body>
+
+	<header>
+		<div class="logo">E-Learning Website</div>
+        
+		<nav>
+			<ul>
+                <li><a href="studentdashboard.html">Home</a></li>
+				<li><a href="myprogress.html">My Progress</a></li>
+				<li><a href="assessments.html">Assessments</a></li>
+				<li><a href="#">Community</a></li>
+                <li><button id="logout-button" onclick="openLogoutModal()">Logout</button></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<section class="banner">
+			<h1>Learn Something New Today</h1>
+			<p>Explore a wide range of courses and topics</p>
+		</section>
+
+		<section class="featured-courses">
+			<h2>Mycourses</h2>
+			<div class="course-list">
+				<div class="course">
+					<img src="../img/webdev.jpeg">
+					<h3>Introduction to Web Development</h3>
+				</div>
+				<div class="course">
+					<img src="../img/python.webp">
+					<h3>Learn Python Programming</h3>
+				</div>
+				<div class="course">
+					<img src="../img/Datascience1.png">
+					<h3>Master Data Science</h3>
+				</div>
+			</div>
+		</section>
+
+		<section class="personalized-learning">
+			<h2>Personalized Learning</h2>
+			<p>Get customized recommendations based on your interests and abilities.</p>
+			<a href="#">Get Started</a>
+		</section>
+
+		<section class="adaptive-assessments">
+			<h2>Adaptive Assessments</h2>
+			<p>Take assessments that adjust to your skill level.</p>
+			<a href="assessments.html">Take an Assessment</a>
+		</section>
+
+		<section class="virtual-reality">
+			<h2>Virtual Reality</h2>
+			<p>Experience immersive learning with VR technology.</p>
+			<a href="#">Explore VR Courses</a>
+		</section>
+
+		<section class="social-learning">
+			<h2>Social Learning</h2>
+			<p>Collaborate with your peers and mentors through discussion forums and group projects.</p>
+			<a href="#">Join the Community</a>
+		</section>
+
+		<section class="gamification">
+			<h2>Gamification</h2>
+			<p>Earn badges, compete on leaderboards, and win rewards for completing courses.</p>
+			<a href="#">Learn More</a>
+		</section>
+
+	</main>
+
+	<footer id="foot">
+		<p>&copy; E-Learning Website 2023</p>
+	</footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

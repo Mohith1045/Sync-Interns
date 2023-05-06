@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music Web-App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id = "bg" class="container">
+		<div class="music-container">
+			<nav>
+				<div class="square">
+					<img src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/menu-bar-icon.png"
+					class="image-card" />
+				</div>
+			</nav>
+			<img id="cover" src="./Asset/boston-cover.jpg" class="image1" />
+			<h1 id="songName">I'm Shipping Up To Boston</h1>
+			<p id="singer">Dropkick Murphys</p>
+
+			<audio id="song" src ="Asset/Boston.mp3" >
+			</audio>
+			<input type="range" value="0" id="playing" >
+
+			<div class="controls">
+				<div onclick="previous()">
+					<img src="https://cdn-icons-png.flaticon.com/512/7513/7513161.png"
+					class="image-card hover" /> 
+				</div>
+				<div onclick="playPause()">
+					<img src="https://uxwing.com/wp-content/themes/uxwing/download/controller-and-music/play-button-round-icon.png"				         
+				    id="controlIcon" class="image-card-1 hover" /> 
+				</div>
+				<div onclick = "next()">
+					<img src="./Asset/Next.jpg"
+					class="image-card hover" /> 
+				</div>	
+			</div>
+		</div> 
+	</div>
+
+
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Learning Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head> 
+<body>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Sign up to get updates and upload a document</h2>
+          <form onsubmit="return false">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <label for="file">File:</label>
+            <div class="file-input">
+              <input type="file" id="file" name="file">
+              <span class="file-label">Choose a file</span>
+              <span class="file-name">No file selected</span>
+            </div>
+            <button type="submit" onclick="saveUser()">Sign up and upload</button>
+          </form>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button1">&times;</span>
+          <h2>Enter Username and Password</h2>
+          <form onsubmit="return false">
+            <label for="name1">Name:</label>
+            <input type="text" id="name1" name="name1" required><br>
+            <label for="password1">Password:</label>
+            <input type="password" id="password1" name="password" required><br>
+            <button type="submit" onclick="verifyUser()">Login</button>
+          </form>
+        </div>
+    </div>
+
+
+
+	<header>
+		<div class="logo">E-Learning Website</div>
+        
+		<nav>
+			<ul>
+                <li><button id="login-button" onclick="openLoginModal()">Login</button></li>
+                <li><button id="signup-button" onclick="openSignupModal()">Sign Up</button></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				
+				<li><a href="#">Community</a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<section class="banner">
+			<h1>Welcome to E-Learning</h1>
+            <p>Learn something new today!</p>
+			<p>Explore a wide range of courses and topics</p>
+		</section>
+
+		<section class="featured-courses">
+			<h2>Featured Courses</h2>
+			<div class="course-list">
+				<div class="course">
+					<img src="img/webdev.jpeg">
+					<h3>Introduction to Web Development</h3>
+				</div>
+				<div class="course">
+					<img src="img/python.webp">
+					<h3>Learn Python Programming</h3>
+				</div>
+				<div class="course">
+					<img src="img/Datascience1.png" />
+					<h3>Master Data Science</h3>
+				</div>
+			</div>
+		</section>
+
+		<section class="personalized-learning">
+			<h2>Personalized Learning</h2>
+			<p>Get customized recommendations based on your interests and abilities.</p>
+			<a href="#">Get Started</a>
+		</section>
+
+		<section class="virtual-reality">
+			<h2>Virtual Reality</h2>
+			<p>Experience immersive learning with VR technology.</p>
+			<a href="#">Explore VR Courses</a>
+		</section>
+
+		<section class="social-learning">
+			<h2>Social Learning</h2>
+			<p>Collaborate with your peers and mentors through discussion forums and group projects.</p>
+			<a href="#">Join the Community</a>
+		</section>
+
+		<section class="gamification">
+			<h2>Gamification</h2>
+			<p>Earn badges, compete on leaderboards, and win rewards for completing courses.</p>
+			<a href="#">Learn More</a>
+		</section>
+
+	</main>
+
+	<footer id="foot">
+		<p>&copy; E-Learning Website 2023</p>
+	</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
